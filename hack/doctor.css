@@ -1,0 +1,46 @@
+.drcard{
+    margin-top: 5px;
+    display: grid;
+    /* background-color: aliceblue; */
+    column-gap: 10px;
+    width: 52vw;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 10px 10px;
+    /* justify-content: space-between; */
+}
+
+.row{
+    row-gap: 10px;
+}
+
+.bgContainer{
+     margin-top: 75px;
+    margin-left: 60px; 
+    margin-right: 0px;
+    /* margin-right: 10px; */
+    padding: 5px 10px;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 440px;
+}
+
+iframe{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px ;
+}
+
+body{
+    background-color: rgb(218, 223, 228);
+}
+
+.card-info-hd{
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px ;
+}
