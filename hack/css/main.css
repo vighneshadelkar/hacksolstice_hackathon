@@ -255,7 +255,34 @@ iframe {
   display: block;
   padding-bottom: 54px;
 }
+#gg i{
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  margin-left: 7.5rem;
+  font-size: 3rem;
+  /* align-items: center; */
+  /* justify-content: center; */
+ background-color: linear-gradient(90deg, #4158d0,#fff6fe);;
+ color: #d04141;
 
+  /* display: none; */
+  
+}
+#gg i:hover{
+  color:#4158d0;
+  transition: ease ,.5s;
+}
+.sgg{
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: small;
+  margin-left: 4.8rem;
+}
+.sgg:hover{
+  color:#4158d0;
+  transition: ease ,.5s;
+}
 
 /*---------------------------------------------*/
 .wrap-input100 {
