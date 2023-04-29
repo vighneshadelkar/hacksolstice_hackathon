@@ -1,5 +1,9 @@
 # hacksolstice_hackathon
 
+
+<h3>
+  We have developed a mental health support website for people who are too much stressed because of their day-to-day life and can't find happiness and peace. We have used html,css,javascript and bootstrap to implement the frontend of our website where the home page contains a chatbot ,main-section, features of our website and a blog section. The chat bot is used to analyse the current mood of the users by asking several questions and according to the answers we get we suggest several to the users for which there's an activity page. Users can play games, can see podcasts and other mental health related videos. The user can also perform breathing exercise on the activities page and can also add their day-to-day tasks on their website. A doctor's page is also available where there are a number doctors whom the users can consult to inorder to tackle there stress and other mental health issues.We have also added a community page to our website where we make users interact which each other to share their feelings and happiness and talk about several other topics related to health , happiness, hope, life,peace,etc
+  </h3>
 A simple login and sign in page for user.
 ![login](https://user-images.githubusercontent.com/74565079/235303139-888a6924-e854-4dc9-bae8-df7cb17c4a4a.jpeg)
 ![signin](https://user-images.githubusercontent.com/74565079/235303144-31471cac-59b5-487a-9fc1-01fa62f44a3c.jpeg)
