@@ -19,3 +19,7 @@ A doctors page where user can book an appointment or ask questions to an doctor.
 We have added an activity page for users to relax their min.This page includes a braething exercise made using css and js and a todo list for user to note doen his activities and some recorded videos for the user to watch we have also added games which the user can wish to play if bored.
 ![image](https://user-images.githubusercontent.com/74565079/235303063-b494ee0e-321f-4c44-bcab-4659c9a3cf97.png)
 ![act1](https://user-images.githubusercontent.com/74565079/235303133-63a5129e-f0a7-4a74-a7ff-2c6fe86ba685.jpg)
+
+
+![chat1](https://user-images.githubusercontent.com/74565079/235303373-9ed02aac-85ee-4380-97d4-dda5c62b5570.png)
+![chat2](https://user-images.githubusercontent.com/74565079/235303374-30a21e25-a07e-4479-8831-9e3c8e333dc2.png)
