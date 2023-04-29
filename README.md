@@ -37,7 +37,8 @@
 
 
 ![image](https://user-images.githubusercontent.com/74565079/235303063-b494ee0e-321f-4c44-bcab-4659c9a3cf97.png)
-![act1](https://user-images.githubusercontent.com/74565079/235303133-63a5129e-f0a7-4a74-a7ff-2c6fe86ba685.jpg)
+![image](https://user-images.githubusercontent.com/74565079/235306360-618c8240-f246-46b9-b700-6995b8fff30f.png)
+
 
 
 <h4>A messaging system where users can chat we fellow users of MindSpace</h4>
