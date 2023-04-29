@@ -21,7 +21,7 @@
 ![home3](https://user-images.githubusercontent.com/74565079/235303163-5ef87246-9596-4941-a3dd-fc2e58f24109.jpeg)
 
 
-<h4>We have made and ai driven chatbot to analysise the mental health of our users and suggest activities accordingly.</h4>
+<h4>We have made and ai driven chatbot to analysise the mental health of our users and suggest activities accordingly.The conversation between the user and chatbot can be mailed to each user</h4>
 
 
 ![chatbot](https://user-images.githubusercontent.com/74565079/235303167-ba161906-7f00-472e-b834-dd08ce770af3.jpeg)
