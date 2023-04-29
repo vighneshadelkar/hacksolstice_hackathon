@@ -1,0 +1,242 @@
+body{
+    background-color: rgb(218, 223, 228);
+}
+
+.bgContainer{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    justify-content: center;
+}
+.games{
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    /* column-gap: 2px; */
+}
+#game1,#game2,#game3,#game4,#game5,#game6{
+    margin: 6px 0px;
+    padding: 0;
+    border-radius: 10px;
+}
+#game6 :hover{
+    border: 10px;
+    border-color: black;
+
+}
+.row{
+    row-gap: 20px;
+}
+
+.videos{
+    /* display: ; */
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(255, 255, 255); */
+    background-color: rgb(255, 255, 255);
+    padding: 15px 10px;
+    border-radius: 15px;
+    /* column-gap: 5px; */
+}
+
+iframe{
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+
+/* todo list css */
+.card{
+    overflow-y: scroll;
+    height: 260px;
+    border-radius: 15px;
+}
+.add-list,
+.ul-list{
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.del-btn
+{
+    background-color: rgb(255, 80, 94);
+    padding: 5px 3px;
+    border-radius: 10px;
+    border: none;
+    font-size: larger;
+    font-weight: bolder;
+    width: 80px;
+    height: 50px;
+    float: right;
+    
+}
+.del-btn:hover{
+    background-color: rgba(247, 149, 157, 0.8);
+}
+.list
+{
+    list-style: none;  
+    border-radius: 10px;
+    padding: 10px 20px;
+    height: 40px;
+    font-size: medium;
+    font-weight: 400;
+}
+
+#lists{
+    row-gap: 10px;
+}
+#li_div{
+    background-color: rgb(205, 203, 203);
+    margin-top: 5px;
+    border: 5px;
+    border-color: black;
+    display: flex;
+    column-gap: 8px;
+    padding: 7px;
+    border-radius: 15px;
+    width: 45vw;
+    justify-content: space-between;
+}
+
+/* breathe */
+#circle {
+    background-color: rgba(244, 244, 244, 0.85);
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+    position: absolute;
+    /* top: 47%; */
+    /* left: 70%; */
+    margin-top: 20px; 
+    margin-left: 100px;
+  }
+
+.circle-header{
+    /* top: 10%; */
+    /* left: 77%; */
+    /* margin-top: px;  */
+    margin-right: 50px;
+  }
+   
+#circle:hover {
+    animation-name: breathing-circle;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+    @keyframes breathing-circle {
+    0% {
+      transform: scale(1);
+    }
+    41% {
+      transform: scale(1.2);
+    }
+    49% {
+      transform: scale(1.2);
+    }
+    90% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .popup {
+    font-size:10vh;
+    color: rgba(0,0,0,0);
+    font-family: 'Raleway', sans-serif;
+    position:absolute;
+    /* top:33%;
+    left: 11%; */
+    margin-top: 65px; 
+    margin-left: 30px;
+  }
+  #exhale-message {
+    /* left: 7%; */
+    margin-top: 65px; 
+    margin-left: 30px;
+  }
+  
+  #circle:hover #inhale-message {
+    animation-name: inh-direction;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  #circle:hover #exhale-message {
+    animation-name: exh-direction;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes inh-direction {
+    0% {
+      color: rgba(253, 193, 140, 0);
+    }
+    10% {
+      color: rgba(253, 193, 140, 1);
+    }
+    40% {
+      color: rgba(253, 193, 140, 1);
+    }
+    50% {
+      color: rgba(253, 193, 140, 0);
+    }
+  }
+  @keyframes exh-direction {
+    0% {
+      color: rgba(253, 193, 140,0);
+    }
+    50% {
+      color: rgba(253, 193, 140,0);
+    }
+    60% {
+      color: rgba(253, 193, 140, 1);
+    }
+    90% {
+      color: rgba(253, 193, 140, 1);
+    }
+    100% {
+      color: rgba(253, 193, 140, 0);
+    }
+  }
+  
+  @keyframes link-jump{
+    0% {
+      color: rgba(0, 0, 0, 0.70);
+    }
+    100% {
+      color: black;
+    }
+  }
+  
+  #close-explanation {
+    cursor: pointer;
+  }
+
+  .flex-container{
+    display: flex;
+    margin-left: 80px;
+  }
+
+.circle-container{
+    /* display: ; */
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 10px;
+    border-radius: 15px;
+    /* column-gap: 5px; */
+}
