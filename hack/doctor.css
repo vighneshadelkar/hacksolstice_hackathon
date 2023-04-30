@@ -229,3 +229,9 @@ body{
     align-items: center;
     padding: 5px ;
 }
+
+footer{
+    background-color: #4148d0;
+    color: white;
+    margin-top: 100px;
+}
