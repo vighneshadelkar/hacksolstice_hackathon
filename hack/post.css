@@ -231,6 +231,8 @@ button {
     padding-bottom: 16px;
     background-color: rgba(0, 145, 255,0.4);
     border-radius: 6px;
+    margin: 1rem;
+    margin-bottom: 1.5rem;
 }
 .quote i{
     color: #007aff;
