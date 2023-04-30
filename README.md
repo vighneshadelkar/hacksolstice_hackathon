@@ -44,5 +44,5 @@
 <h4>A messaging system where users can chat we fellow users of MindSpace</h4>
 
 
-![chat1](https://user-images.githubusercontent.com/74565079/235303373-9ed02aac-85ee-4380-97d4-dda5c62b5570.png)
+![image](https://user-images.githubusercontent.com/74565079/235333394-94d4284e-b460-4518-88d2-937797f4efd9.png)
 ![chat2](https://user-images.githubusercontent.com/74565079/235303374-30a21e25-a07e-4479-8831-9e3c8e333dc2.png)
