@@ -32,12 +32,15 @@
 
 
 ![doctor](https://user-images.githubusercontent.com/74565079/235303177-239266b4-fe19-449b-9058-4a6950c1100a.jpeg)
+![dr2](https://user-images.githubusercontent.com/74565079/235338312-bd70ee5f-7bcd-49b5-9114-f971c72727ea.jpeg)
 
-<h4>We have added an activity page for users to relax their min.This page includes a braething exercise made using css and js and a todo list for user to note doen his activities and some recorded videos for the user to watch we have also added games which the user can wish to play if bored.</h4>
+<h4>We have added an activity page for users to relax their min.This page includes a braething exercise made using css and js and a todo list for user to note doen his activities and some recorded videos for the user to watch we have also added games which the user can wish to play if bored.User can alsom listen to peaceful music to calm himself</h4>
 
 
 ![image](https://user-images.githubusercontent.com/74565079/235338135-6a09e5a0-a6c7-4ed2-8a18-b9c05e57b1e1.png)
-![image](https://user-images.githubusercontent.com/74565079/235306360-618c8240-f246-46b9-b700-6995b8fff30f.png)
+![image](https://user-images.githubusercontent.com/74565079/235338256-7718237a-6e1a-417e-997d-cc79027d5c1a.png)
+![image](https://user-images.githubusercontent.com/74565079/235338269-baf6b730-0444-4939-89d6-7ae3162d83d4.png)
+
 
 
 
