@@ -1,0 +1,208 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MindSpace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary wide">
+            <div class="container-fluid">
+                <div class="logoo m-l-24">
+
+                    <img src="{% static 'images/mainlogo.png' %}" alt="">
+                </div>
+                <a href="home">
+                    <h2 class="navbar-brand heading">MindSpace</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex menu" id="menu">
+                    <ul class="list" id="navbar">
+                        <li class="litem nav-item"><a class="nav-link gr active link current" aria-current="page"
+                                href="home">Home</a></li>
+                        <li class="litem nav-item"><a class="nav-link gr link" href="activity/">Activity</a></li>
+                        <li class="litem nav-item"><a class="nav-link gr link" href="rooms/">Community</a></li>
+                        <li class="litem nav-item"><a class="nav-link gr link" href="info">Info</a></li>
+                        <li class="litem nav-item"><a class="nav-link gr link" href="contact">Contact Us</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="list flex" id="icons">
+                    <button class="sg litem"><a class="gr" href="logout" target="_self">Logout</a></button>
+                    {% comment %} <button class="sg litem"><a class="gr" href="signup" target="_self">Sign Up</a></button> {% endcomment %}
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid" id="main-pic">
+        <div class="welcome">
+            Welcome , User!
+        </div>
+        <div class="row">
+            <div class="col-sm-5">
+                <img src="{% static 'images/main.jpg' %}" class="img-fluid " id="matters">
+                <p id="main-txt"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nihil
+                    reprehenderit, voluptas sed,
+                    neque vitae non, accusantium id voluptatibus tenetur laborum suscipit nam. Corporis modi expedita
+                    beatae soluta provident velit!</p>
+                <button type="button" id="main-btn" class="btn btn-primary">Learn More</button>
+            </div>
+            <div class="col-sm-5">
+                <img class="img-main" src="{% static 'images/_Get-rid-of-the-stigma-.png' %}">
+            </div>
+            <!-- <div class="col-sm-6">
+                hello
+            </div> -->
+        </div>
+    </div>
+    <div class="features">
+        <div class="heading headcon" id="feathead">
+            Features
+            <div class="shadow-effect">FEATURES</div>
+        </div>
+        <div class="container" id="featcont">
+            <div class="flex items ft" id="ft1">
+                <div class="fticont">
+
+                    <div class="ftimg" id="ftimg1">
+                    </div>
+                    <div class="ftname" id="ftname1">
+                        Chat-Bot
+                    </div>
+                </div>
+                <div class="fttxt" id="fttxt1">
+                    A Chat-Bot where you can express your feelings and remove your stress.It identifies the mood
+                    according the response of the users. And activities and games as well as podcasts are suggested to
+                    the users to make them stress-free and lead a happy individual life.
+                </div>
+            </div>
+
+            <div class="flex items ft" id="ft2">
+
+                <div class="fttxt" id="fttxt2">
+                    Users are suggested various activities such as simple games to play to make their mood better.Watch
+                    youtube videos on the website itself which are related to life, hope and happiness.They can also
+                    hear music to have peace.
+                </div>
+                <div class="fticont">
+                    <div class="ftimg" id="ftimg2">
+                    </div>
+                    <div class="ftname" id="ftname2">
+                        Activities
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items ft" id="ft3">
+                <div class="fticont">
+                    <div class="ftimg" id="ftimg3">
+                    </div>
+                    <div class="ftname" id="ftname3">
+                        Community
+                    </div>
+                </div>
+                <div class="fttxt" id="fttxt1">
+                    Like-minded people having similar thoughts can have a conversation and form new friends on the
+                    community page of our website.Users can make strangers their best friends and share their sorrow and
+                    joy.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="oldpost">
+        <div class="heading headcon" id="ophead">
+            Blog Posts
+            <div class="shadow-effect">BLOG POSTS</div>
+        </div>
+        <div class="container" id="opcont">
+            <div class="flex items opit">
+                <div class=" op" id="opimg1">
+                </div>
+                <div class="datetime opcontent" id="optxt1">
+                    <!-- Feb 7th 2023 &nbsp;<strong>.</strong>&nbsp; 3 Min read -->
+                    <div class="sampart">
+                        Sample article title
+                    </div>
+                    <div class="optxt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo minima error possimus vero
+                        nisi aut numquam dolor laborum deleniti!
+                    </div>
+                </div>
+            </div>
+            <div class="flex items opit">
+                <div class=" op" id="opimg2">
+                </div>
+                <div class="datetime opcontent" id="optxt2">
+                    <!-- Feb 7th 2023 &nbsp;<strong>.</strong>&nbsp; 3 Min read -->
+                    <div class="sampart">
+                        Sample article title
+                    </div>
+                    <div class="optxt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo minima error possimus vero
+                        nisi aut numquam dolor laborum deleniti!
+                    </div>
+                </div>
+            </div>
+            <div class="flex items opit">
+                <div class=" op" id="opimg3">
+                </div>
+                <div class="datetime opcontent" id="optxt3">
+                    <!-- Feb 7th 2023 &nbsp;<strong>.</strong>&nbsp; 3 Min read -->
+                    <div class="sampart">
+                        Sample article title
+                    </div>
+                    <div class="optxt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo minima error possimus vero
+                        nisi aut numquam dolor laborum deleniti!
+                    </div>
+                </div>
+            </div>
+            <div class="flex items opit">
+                <div class=" op" id="opimg4">
+                </div>
+                <div class="datetime opcontent" id="optxt4">
+                    <!-- Feb 7th 2023 &nbsp;<strong>.</strong>&nbsp; 3 Min read -->
+                    <div class="sampart">
+                        Sample article title
+                    </div>
+                    <div class="optxt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo minima error possimus vero
+                        nisi aut numquam dolor laborum deleniti!
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <iframe style="border: none;" height="600px" width="400px"
+        src="https://widget.kommunicate.io/chat?appId=YOUR_APP_ID" allow="microphone; geolocation;">
+    </iframe>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        (function (d, m) {
+            var kommunicateSettings =
+                { "appId": "11932ede39ce62a893db9ecb8fc1bb3fe", "popupWidget": true, "automaticChatOpenOnNavigation": true };
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+        /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
+</body>
+
+</html>

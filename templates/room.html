@@ -1,0 +1,179 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MindSpace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/eachroom.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary wide">
+            <div class="container-fluid">
+                <div class="logoo m-l-24">
+
+                    <img src="{% static 'images/mainlogo.png' %}" alt="">
+                </div>
+                <a href="./index.html">
+                    <h2 class="navbar-brand heading">MindSpace</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex menu" id="menu">
+                    <ul class="list" id="navbar">
+                        <li class="litem nav-item"><a class="nav-link gr active link current" aria-current="page"
+                                href="home">Home</a></li>
+                        <li class="litem nav-item"><a class="nav-link gr link" href="activity">Activity</a></li>
+                        <li class="litem nav-item"><a class="nav-link gr link" href="rooms/">Community</a></li>
+                        <li class="litem nav-item"><a class="nav-link gr link" href="info">Info</a></li>
+                        <li class="litem nav-item"><a class="nav-link gr link" href="contact">Contact Us</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="list flex" id="icons">
+                    <button class="sg litem"><a class="gr" href="logout" target="_self">Logout</a></button>
+                    {% comment %} <button class="sg litem"><a class="gr" href="signup" target="_self">Sign Up</a></button> {% endcomment %}
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- <div class="container"> -->
+    <div class="row">
+        <!-- sudebar -->
+        <div class="col-sm-4">
+            <div class=" sidebar">
+                <!-- <div > -->
+                <h1 class="room-name" class="text">{{ room.name }}</h1>
+                <!-- </div> -->
+                <h3>Active:</h3>
+                {% for i in messages %}
+                <div class="user_names">
+                    {{i.user.username }}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="container main-contain">
+                <div class="container">
+                    <div class="chat-messages" id="chat-messages">
+                        {% for message in messages %}
+                        <div class="content" id="whyQuery">
+                            <p class="user_name fw-1">{{ message.user.username }}</p>
+                            <p class="user_content">{{ message.content }}</p>
+                        </div>
+
+                        {% endfor %}
+                        <div class="input-msg">
+                            <form method="post" action="." class="flex">
+                                {% csrf_token %}
+                                <div class="input-group mb-3">
+                                    <!-- <span class="input-group-text" id="basic-addon1">@</span> aria-label="Username" aria-describedby="basic-addon1"-->
+                                    <input type="text" id="chat-message-input" name="content" class="form-control"
+                                        placeholder="Your message...">
+                                    <button type="button" class="btn btn-primary"
+                                        id="chat-message-submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+
+
+
+
+    {% block scripts %}
+    {{ room.slug|json_script:"json-roomname" }}
+    {{ request.user.username|json_script:"json-username" }}
+
+    <script>
+        const roomName = JSON.parse(document.getElementById('json-roomname').textContent);
+        const userName = JSON.parse(document.getElementById('json-username').textContent);
+        const chatSocket = new WebSocket(
+            'ws://'
+            + window.location.host
+            + '/ws/'
+            + roomName
+            + '/'
+        );
+
+        chatSocket.onclose = function (e) {
+            console.log('onclose')
+        }
+
+        chatSocket.onmessage = function (e) {
+            const data = JSON.parse(e.data);
+
+            if (data.message) {
+                document.querySelector('#whyQuery').innerHTML += ('<b>' + data.username + '</b>: ' + data.message + '<br>');
+            } else {
+                alert('The message was empty!')
+            }
+
+            scrollToBottom();
+        };
+
+        document.querySelector('#chat-message-input').focus();
+        document.querySelector('#chat-message-input').onkeyup = function (e) {
+            if (e.keyCode === 13) {
+                document.querySelector('#chat-message-submit').click();
+            }
+        };
+
+        document.querySelector('#chat-message-submit').onclick = function (e) {
+            e.preventDefault()
+
+            const messageInputDom = document.querySelector('#chat-message-input');
+            const message = messageInputDom.value;
+            console.log(message)
+            console.log({
+                'message': message,
+                'username': userName,
+                'room': roomName
+            })
+            
+
+            chatSocket.send(JSON.stringify({
+                'message': message,
+                'username': userName,
+                'room': roomName
+            }));
+
+            messageInputDom.value = '';
+
+            return false
+        };
+
+        /**
+        * A function for finding the messages element, and scroll to the bottom of it.
+        */
+        function scrollToBottom() {
+            let objDiv = document.getElementById("chat-messages");
+            objDiv.scrollTop = objDiv.scrollHeight;
+        }
+
+        // Add this below the function to trigger the scroll on load.
+        scrollToBottom();
+    </script>
+    {% endblock %}
+    <!-- </main> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
