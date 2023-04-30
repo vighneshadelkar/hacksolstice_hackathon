@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+body {
+    background-color: var(--sec);
+    letter-spacing: 1px;
+    font-family: Poppins;
+    /* transition:background-color .25s,color .25s; */
+}
+
+:root {
+    --light: rgb(255, 255, 255);
+    --light2: antiquewhite;
+    --prim: #4148d0;
+    --sec: #ffffff;
+    --hov-light: #4148d0;
+    --hov-dark: var(--prim);
+    --trans-light: rgba(255, 255, 255, 0.8);
+    --trans-dark: rgba(0, 0, 0, 0.788);
+    --text-col-big: #fae3e3;
+    --text-col-small: rgba(0, 0, 0, 0.6);
+    --gradient-color: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+}
+
+.logoo {
+    height: 5.2rem;
+    width: 5rem;
+}
+
+nav {
+
+    letter-spacing: 1px;
+    font-family: Poppins, serif;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--prim);
+    width: 100%;
+    z-index: 100;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.heading {
+    font-family: Ubuntu;
+    color: black;
+    font-size: 1.9rem;
+    /* margin-top: rem; */
+    margin-bottom: 0.1rem;
+    font-weight: 900;
+    /* margin-left: rem; */
+    /* margin-left: 3rem; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+input,
+button {
+    font: inherit;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#menu {
+    display: block;
+    margin: auto;
+    /* margin-top:rem; */
+    margin-right: 1rem;
+    margin-left: 5rem;
+}
+
+#navbar {
+    display: flex;
+    /* flex-wrap: wrap; */
+    font-size: 1.15rem;
+
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+
+.listtt {
+    margin-top: 1.1rem;
+    margin-bottom: 1.1rem;
+}
+
+.gr {
+    padding: 0.32rem 2.2rem;
+}
+
+.litem a:hover {
+    /* color:  rgb(242, 232, 232); */
+    color: var(--hov-light);
+}
+
+.current {
+    color: var(--hov-light);
+}
+
+#icons {
+    margin-right: 3rem;
+}
+
+.sg {
+    border-radius: 2rem;
+    border: .1rem solid #12bcfe;
+    padding: 2;
+    cursor: pointer;
+    margin: 0rem .4rem;
+}
+
+.sg a {
+    color: #1259fe;
+    font-family: Poppins;
+    font-weight: 100;
+    padding: .2rem .8rem;
+}
+
+.items {
+    /* background-color: blanchedalmond; */
+    /* border:2px solid green; */
+    color: black;
+    margin: 0.34rem;
+    font-size: 1.1rem;
+
+}
+
+.container {
+    margin: 4rem;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.headcon {
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.shadow-effect {
+    /* font-family: 'Tilt Wrap', cursive; */
+    color: rgba(65, 72, 208,0.4);
+    display: inline;
+    position: relative;
+    right: 5rem;
+    top: .96rem;
+    font-weight: bolder;
+}
+/* Blog post */
+.blog-post{
+    padding-bottom: 5rem;
+}
+
+.blog-post-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* padding-block: 2.5rem; */
+}
+
+.blog-post-title{
+    font-family: Ubuntu;
+    /* font-size: clamp(3rem, 5vw, 6rem);  */
+    font-size: 4rem;
+}
+
+.blog-post-data .article-data{
+    /* margin-bottom: 2.5rem; */
+}
+
+.blog-post-data img{
+    /* width: 100%; */
+    /* height: var(--item-min-height-sm); */
+    height: 46rem;
+    width: 60rem;
+    object-fit: cover;
+    object-position: center 10%;
+}
+
+.blog-post-container .container{
+    max-width: 90rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.quote{
+    background-color: var(--secondary-background-color);
+    /* padding: 2.5rem; */
+}
+
+.quote{
+    font-family: Rubik;
+    font-style: italic;
+}
+
+.quote{
+    font-size: 1.5rem;
+    padding-bottom: 16px;
+    background-color: rgba(0, 145, 255,0.4);
+    border-radius: 6px;
+}
+.quote i{
+    color: #007aff;
+    font-size: 4rem;
+}
+.container{
+    margin: 1rem 4rem;
+}
