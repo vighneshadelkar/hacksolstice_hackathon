@@ -1,0 +1,47 @@
+#footer{
+    display: grid;
+    margin-bottom: 0rem;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 1rem;
+}
+#foottxt{
+    margin:.8rem 0rem;
+}
+#footer i{
+    padding: .7rem .4rem;
+    color: #4c62d2;;
+}
+.footitem{
+    margin: .5rem 0rem;
+}
+
+.sm{
+    display:none;
+}
+
+footer{
+    background-color: var(--prim);
+}
+
+.datetime {
+    font-size: 0.7rem;
+    padding: .5rem 0rem;
+    color: #4c62d2;;
+}
+
+.items {
+    /* background-color: blanchedalmond; */
+    /* border:2px solid green; */
+    color: rgb(250, 227, 227);
+    margin: 0.34rem;
+    font-size: 1.1rem;
+
+}
+
+.container {
+    /* width: 70rem; */
+    /* position: relative; */
+    /* border:2px solid white; */
+    margin: 1rem 3rem;
+    /* margin-bottom: 3rem; */
+}

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+body {
+    background-color: var(--sec);
+    letter-spacing: 1px;
+    font-family: Poppins;
+    /* transition:background-color .25s,color .25s; */
+}
+
+:root {
+    --light: rgb(255, 255, 255);
+    --light2: antiquewhite;
+    --prim: #4148d0;
+    --sec: #ffffff;
+    --hov-light: #4148d0;
+    --hov-dark: var(--prim);
+    --trans-light: rgba(255, 255, 255, 0.8);
+    --trans-dark: rgba(0, 0, 0, 0.788);
+    --text-col-big: #fae3e3;
+    --text-col-small: rgba(0, 0, 0, 0.6);
+    --gradient-color: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+}
+
+.logoo {
+    height: 5.2rem;
+    width: 5rem;
+}
+
+nav {
+
+    letter-spacing: 1px;
+    font-family: Poppins, serif;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--prim);
+    width: 100%;
+    z-index: 100;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.heading {
+    font-family: Ubuntu;
+    color: black;
+    font-size: 1.9rem;
+    /* margin-top: rem; */
+    margin-bottom: 0.1rem;
+    font-weight: 900;
+    /* margin-left: rem; */
+    /* margin-left: 3rem; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+input,
+button {
+    font: inherit;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#menu {
+    display: block;
+    margin: auto;
+    /* margin-top:rem; */
+    margin-right: 1rem;
+    margin-left: 5rem;
+}
+
+#navbar {
+    display: flex;
+    /* flex-wrap: wrap; */
+    font-size: 1.15rem;
+
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+
+.listtt {
+    margin-top: 1.1rem;
+    margin-bottom: 1.1rem;
+}
+
+.gr {
+    padding: 0.32rem 2.2rem;
+}
+
+.litem a:hover {
+    /* color:  rgb(242, 232, 232); */
+    color: var(--hov-light);
+}
+
+.current {
+    color: var(--hov-light);
+}
+
+#icons {
+    margin-right: 3rem;
+}
+
+.sg {
+    border-radius: 2rem;
+    border: .1rem solid #12bcfe;
+    padding: 2;
+    cursor: pointer;
+    margin: 0rem .4rem;
+}
+
+.sg a {
+    color: #1259fe;
+    font-family: Poppins;
+    font-weight: 100;
+    padding: .2rem .8rem;
+}
+
+.items {
+    /* background-color: blanchedalmond; */
+    /* border:2px solid green; */
+    color: black;
+    margin: 0.34rem;
+    font-size: 1.1rem;
+
+}
+
+.container {
+    /* margin: 5rem 9.5rem; */
+}
+
+
+.flex {
+    display: flex;
+}
+
+.headcon {
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.shadow-effect {
+    /* font-family: 'Tilt Wrap', cursive; */
+    color: rgba(65, 72, 208,0.4);
+    display: inline;
+    position: relative;
+    right: 5rem;
+    top: .96rem;
+    font-weight: bolder;
+}
+body{
+    background-color: rgb(218, 236, 254);
+}
+.rooms{
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+    column-gap: 10px;
+}
+
+.btn{
+    width: 250px;
+}
