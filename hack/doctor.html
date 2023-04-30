@@ -12,27 +12,40 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary wide">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">MindSpace</a>
+                <div class="logoo m-l-24">
+
+                    <img src="./images/mainlogo.png" alt="">
+                </div>
+                <a href="./index.html">
+                    <h2 class="navbar-brand heading">MindSpace</h2>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./activity.html">acrivity</a>
-                        </li>
+                <div class="collapse navbar-collapse d-flex menu" id="menu">
+                    <ul class="listtt" id="navbar">
+                        <li class="litem nav-item"><a class="nav-link gr active link current" aria-current="page"
+                                href="#">Home</a></li>
+                        <li class="litem nav-item"><a class="nav-link gr link" href="./activity.html">Activity</a></li>
+                        <li class="litem nav-item"><a class="nav-link gr link" href="">Community</a></li>
+                        <li class="litem nav-item"><a class="nav-link gr link" href="#">Info</a></li>
+                        <li class="litem nav-item"><a class="nav-link gr link" href="#">Contact Us</a></li>
+
+
                     </ul>
+                </div>
+                <div class="listtt flex" id="icons">
+                    <button class="sg litem"><a class="gr" href="./login.html" target="_blank">Login</a></button>
+                    <button class="sg litem"><a class="gr" href="./sign .html" target="_blank">Sign Up</a></button>
                 </div>
             </div>
         </nav>
     </header>
 
+    
     <main>
         <div class="row">
             <div class="col">
@@ -41,15 +54,15 @@
                     <div class="row">
                         <div class="col">
                             <div class="drcard shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="dr1">
-                                <img src="" alt="pic" class="img-fluid" id="dr1">
+                                <img src="./images/d1.jpg" alt="pic" class="img-fluid" id="dr1">
                                 <div class="cardDetail">
                                     <h3>Dr. Dean Creado</h3>
                                     <p>MBBS, DPM (Psychiatry), DNB - Psychiatry
                                         19 years experience overall
                                         Psychiatrist.
                                     </p>
-                                    <button type="button" class="btn btn-secondary">Ask a Question?</button>
-                                    <button type="button" class="btn btn-primary">Make Apoointment</button>
+                                    <!-- <button type="button" class="btn btn-secondary">Ask a Question?</button> -->
+                                    <button type="button" class="btn btn-primary">Make A Call</button>
                                 </div>
                                 <!-- <div>
                                     <h3>+918934995678</h3>
@@ -59,15 +72,15 @@
                         </div>
                         <div class="col">
                             <div class="drcard shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="dr2">
-                                <img src="" alt="pic" class="img-fluid" id="dr2">
+                                <img src="./images/d3.jpg" alt="pic" class="img-fluid" id="dr2">
                                 <div class="cardDetail">
                                     <h3>DR Gauri Saxena</h3>
                                     <p>BA - Psychology
                                         4 years experience overall
                                         Therapist Counselling
                                         Psychologist , Neuropsychiatrist.</p>
-                                    <button type="button" class="btn btn-secondary">Ask a Question?</button>
-                                    <button type="button" class="btn btn-primary" id="dr1">Make Apoointment</button>
+                                    <!-- <button type="button" class="btn btn-secondary">Ask a Question?</button> -->
+                                    <button type="button" class="btn btn-primary" id="dr1">Make A Call</button>
                                 </div>
                                 <!-- <div>
                                     <h3>+91-923405678</h3>
@@ -77,14 +90,14 @@
                         </div>
                         <div class="col">
                             <div class="drcard shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="dr3">
-                                <img src="" class="img-fluid" alt="pic" id="dr3">
+                                <img src="./images/d4.jpg" class="img-fluid" alt="pic" id="dr3">
                                 <div class="cardDetail">
                                     <h3>DR Suhavana shetty</h3>
                                     <p>MBBS, M.D. (Psychiatry), DM - Addiction Psychiatry
                                         5 years experience overall
                                         Psychiatrist</p>
-                                    <button type="button" class="btn btn-secondary">Ask a Question?</button>
-                                    <button type="button" class="btn btn-primary" id="dr1">Make Apoointment</button>
+                                    <!-- <button type="button" class="btn btn-secondary">Ask a Question?</button> -->
+                                    <button type="button" class="btn btn-primary" id="dr1">Make A Call</button>
                                 </div>
                                 <!-- <div>
                                     <h3>+9190345678</h3>
@@ -94,14 +107,14 @@
                         </div>
                         <div class="col">
                             <div class="drcard shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="dr4">
-                                <img src="" alt="pic" class="img-fluid" id="dr4">
+                                <img src="./images/doc1.avif" alt="pic" class="img-fluid" id="dr4">
                                 <div class="cardDetail">
-                                    <h3>DR John Yane</h3>
+                                    <h3>DR Mohit Jain</h3>
                                     <p>MBBS, DPM (Psychiatry), DNB - Psychiatry
                                         19 years experience overall
                                         Psychiatrist , Neuropsychiatrist.</p>
-                                    <button type="button" class="btn btn-secondary">Ask a Question?</button>
-                                    <button type="button" class="btn btn-primary" id="dr1">Make Apoointment</button>
+                                    <!-- <button type="button" class="btn btn-secondary">Ask a Question?</button> -->
+                                    <button type="button" class="btn btn-primary" id="dr1">Make A Call</button>
                                 </div>
                                 <!-- <div>
                                     <h3>+919017235678</h3>
