@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    {% comment %} <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary wide">
             <div class="container-fluid">
                 <div class="logoo m-l-24">
@@ -42,6 +42,39 @@
                 <div class="listtt flex" id="icons">
                     <button class="sg litem"><a class="gr" href="login" target="_blank">Login</a></button>
                     <button class="sg litem"><a class="gr" href="signup" target="_blank">Sign Up</a></button>
+                </div>
+            </div>
+        </nav>
+    </header> {% endcomment %}
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary wide">
+            <div class="container-fluid">
+                <div class="logoo m-l-24">
+
+                    <img src="{% static 'images/mainlogo.png' %}" alt="">
+                </div>
+                <a href="home">
+                    <h2 class="navbar-brand heading">MindSpace</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex menu" id="menu">
+                    <ul class="list" id="navbar">
+                        <li class="litem nav-item"><a class="nav-link gr active link current" aria-current="page"
+                                href="home">Home</a></li>
+                        <li class="litem nav-item"><a class="nav-link gr link" href="activity/">Activity</a></li>
+                        <li class="litem nav-item"><a class="nav-link gr link" href="rooms/">Community</a></li>
+                        <li class="litem nav-item"><a class="nav-link gr link" href="info">Info</a></li>
+                        <li class="litem nav-item"><a class="nav-link gr link" href="contact">Contact Us</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="list flex" id="icons">
+                    <button class="sg litem"><a class="gr" href="logout" target="_self">Logout</a></button>
+                    {% comment %} <button class="sg litem"><a class="gr" href="signup" target="_self">Sign Up</a></button> {% endcomment %}
                 </div>
             </div>
         </nav>
