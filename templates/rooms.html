@@ -90,11 +90,65 @@
                 {% for room in rooms %}
                 <div class="rooms">
                     <div class="p-4 ">
-                        <img src="./room/chatroom.png " class="img-top img-fluid" alt="pic">
-                        <h2 class="rm-name">{{ room.name }}</h2>
+                        <img src="{% static 'images/main-mentalimg.png' %}" class="img-top img-fluid" alt="pic">
+                        <h2 class="rm-name">Hobby</h2>
                         <hr>
 
                         <article>{{ room.article }}</article>
+                        <br>
+                        <a href="{% url 'room' room.slug %}" class="jn-btn"><button type="button"
+                                class="btn btn-primary">JOIN</button></a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                {% for room in rooms %}
+                <div class="rooms">
+                    <div class="p-4 ">
+                        <img src="{% static 'images/main-mentalimg.png' %}" class="img-top img-fluid" alt="pic">
+                        <h2 class="rm-name">PTSD</h2>
+                        <hr>
+
+                        <article>Join this chatroom and discuss with fellow mindspace users having panic issues.</article>
+                        <br>
+                        <a href="{% url 'room' room.slug %}" class="jn-btn"><button type="button"
+                                class="btn btn-primary">JOIN</button></a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                {% for room in rooms %}
+                <div class="rooms">
+                    <div class="p-4 ">
+                        <img src="{% static 'images/main-mentalimg.png' %}" class="img-top img-fluid" alt="pic">
+                        <h2 class="rm-name">Anxiety</h2>
+                        <hr>
+
+                        <article>Join this chatroom and discuss with fellow mindspace users having panic issues.</article>
+                        <br>
+                        <a href="{% url 'room' room.slug %}" class="jn-btn"><button type="button"
+                                class="btn btn-primary">JOIN</button></a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                {% for room in rooms %}
+                <div class="rooms">
+                    <div class="p-4 ">
+                        <img src="{% static 'images/main-mentalimg.png' %}" class="img-top img-fluid" alt="pic">
+                        <h2 class="rm-name">Panic</h2>
+                        <hr>
+
+                        <article>Join this chatroom and discuss with fellow mindspace users having panic issues.</article>
                         <br>
                         <a href="{% url 'room' room.slug %}" class="jn-btn"><button type="button"
                                 class="btn btn-primary">JOIN</button></a>

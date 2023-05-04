@@ -11,7 +11,15 @@
     <link rel="stylesheet" href="{% static 'css/doctor.css' %}">
     <link rel="stylesheet" href="{% static 'css/act.css' %}">
 </head>
-
+<style>
+    img{
+        height: 160px;
+        width: 100px;
+    }
+    .drcard{
+        display: flex;
+    }
+</style>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary wide">
@@ -94,7 +102,7 @@
                         </div>
                         <div class="col">
                             <div class="drcard shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="dr2">
-                                <img src="" alt="pic" class="img-fluid" id="dr2">
+                                <img src="{% static 'images/mainlogo.png' %}" alt="pic" class="img-fluid" id="dr2">
                                 <div class="cardDetail">
                                     <h3>DR Gauri Saxena</h3>
                                     <p>BA - Psychology

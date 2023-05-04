@@ -268,38 +268,38 @@ body.light {
 }
 
 #opimg1 {
-    background: url('./images/1op.png') center center/cover;
+    background: url('{{ STATIC_URL }}images/1op.png') center center/cover;
 }
 
 #opimg2 {
-    background: url('./images/2op.png') center center/cover;
+    background: url('{{ STATIC_URL }}images/2op.png') center center/cover;
 }
 
 #opimg3 {
-    background: url('./images/3op.png') center center/cover;
+    background: url('{{ STATIC_URL }}images/3op.png') center center/cover;
 }
 
 #opimg4 {
-    background: url('./images/4op.png') center center/cover;
+    background: url('{{ STATIC_URL }}images/4op.png') center center/cover;
 }
 
 
 
 #ftimg1 {
-    background: url('./images/cbot.avif') center center/cover;
+    background: url('{{ STATIC_URL }}images/cbot.avif') center center/cover;
     height: 20rem;
     width: 14rem;
 
 }
 
 #ftimg2 {
-    background: url('./images/act3.jpg') center center/cover;
+    background: url('{{ STATIC_URL }}images/act3.jpg') center center/cover;
     height: 18rem;
     width: 26rem;
 }
 
 #ftimg3 {
-    background: url('./images/com3.avif') center center/cover;
+    background: url('{{ STATIC_URL }}images/com3.avif') center center/cover;
     height: 19rem;
     width: 24rem;
 
